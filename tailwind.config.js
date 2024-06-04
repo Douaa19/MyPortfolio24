@@ -50,7 +50,7 @@ module.exports = {
         5: "16px",
       },
       backgroundColor: {
-        "main": "#7469AD",
+        main: "#82A0D8",
         "main-bg": "#F5F5F5",
         blue: "#192655",
         dark: "#000000",
