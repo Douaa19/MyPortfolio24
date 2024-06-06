@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    safelist: [
+      "animate-[fade-in_1s_ease-in-out]",
+      "animate-[fade-in-down_1s_ease-in-out]",
+    ],
     screens: {
       ssm: "320px",
       sm: "640px",
