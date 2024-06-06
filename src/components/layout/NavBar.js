@@ -17,14 +17,14 @@ function NavBar() {
         <span className="text-main uppercase text-32 font-bold">d</span>
         <span className="text-white uppercase text-24 font-bold">olr</span>
       </div>
-      <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ">
+      <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ssm:fixed md:relative">
         <div className="flex justify-between items-end w-full ssm:flex-col md:flex-row">
           {myList.map((link, index) => (
             <>
               <a
                 key={index}
                 href={`#${link.link}`}
-                className="uppercase px-2 py-0 ssm:py-2 md:mx-2 relative text-white lg:text-16 md:14 md:link sm:text-12 flex items-center md:transition-none md:hover:-translate-x-0 ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4">
+                className="uppercase px-2 py-0 ssm:py-2 md:mx-2 relative text-white lg:text-16 md:14 hover:text-main sm:text-12 flex items-center ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4 md:hover:-translate-y-1 md:hover:-translate-x-0 ssm:hover:-translate-y-0">
                 {link.name}
               </a>
             </>
