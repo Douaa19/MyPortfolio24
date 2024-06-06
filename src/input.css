@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 a.link:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
