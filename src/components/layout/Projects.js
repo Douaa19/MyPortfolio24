@@ -3,7 +3,7 @@ import CardGrid from "../templates/CardGrid";
 
 function Projects() {
   return (
-    <div className="w-11/12 h-full flex items-center">
+    <div className="w-full">
       <CardGrid />
     </div>
   );
