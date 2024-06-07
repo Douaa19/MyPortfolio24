@@ -1,7 +1,6 @@
 import React from "react";
 
 function NavBar(props) {
-  console.log(props.section);
   const listClass =
     "cursor-pointer uppercase px-2 py-0 ssm:py-2 md:mx-2 relative lg:text-16 md:14 hover:text-main sm:text-12 flex items-center ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4 md:hover:-translate-y-1 md:hover:-translate-x-0 ssm:hover:-translate-y-0";
 
@@ -23,31 +22,36 @@ function NavBar(props) {
           <li
             className={`${listClass} ${
               props.section === "projects" ? "text-main" : "text-white"
-            }`}>
+            }`}
+            onClick={() => props.setSection.setSection("projects")}>
             projects
           </li>
           <li
             className={`${listClass} ${
               props.section === "skills" ? "text-main" : "text-white"
-            }`}>
+            }`}
+            onClick={() => props.setSection.setSection("skills")}>
             skills
           </li>
           <li
             className={`${listClass} ${
               props.section === "experience" ? "text-main" : "text-white"
-            }`}>
+            }`}
+            onClick={() => props.setSection.setSection("experience")}>
             experience
           </li>
           <li
             className={`${listClass} ${
               props.section === "education" ? "text-main" : "text-white"
-            }`}>
+            }`}
+            onClick={() => props.setSection.setSection("education")}>
             education
           </li>
           <li
             className={`${listClass} ${
               props.section === "contact" ? "text-main" : "text-white"
-            }`}>
+            }`}
+            onClick={() => props.setSection.setSection("contact")}>
             contact
           </li>
         </ul>

@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { ProjectCard } from "../organismes";
 
 function CardGrid() {
   return (
-    <div>CardGrid</div>
-  )
+    <div className="flex gap-8">
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+    </div>
+  );
 }
 
-export default CardGrid
+export default CardGrid;

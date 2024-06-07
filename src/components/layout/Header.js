@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroHeader, NavBar } from "./index";
-import { Introduction } from "../layout";
+import { Introduction, Projects } from "../layout";
 
 function Header(props) {
   let section;
@@ -9,6 +9,14 @@ function Header(props) {
     section = <HeroHeader />;
   } else if (props.section === "about") {
     section = <Introduction />;
+  } else if (props.section === "projects") {
+    section = <Projects />;
+  } else if (props.section === "skills") {
+    section = (
+      <div className="text-white">
+        <h1>Hello skills</h1>
+      </div>
+    );
   }
 
   return (
