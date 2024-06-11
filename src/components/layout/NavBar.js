@@ -86,12 +86,14 @@ function NavBar(props) {
             onClick={() => props.setSection.setSection("contact")}>
             contact
           </li>
-          <li
-            className={`cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
+        </ul>
+        <div className="w-1">
+          <button
+            className={`outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
             onClick={() => props.setLight(!props.light)}>
             {props.light ? <Dark /> : <Light />}
-          </li>
-        </ul>
+          </button>
+        </div>
       </div>
       {/* <div className="md:hidden">
         <button
