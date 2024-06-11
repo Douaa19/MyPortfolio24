@@ -11,7 +11,7 @@ function Header(props) {
         light={props.light}
         setLight={props.setLight}
       />
-      <HeroHeader />
+      <HeroHeader light={props.light} />
     </div>
   );
 }
