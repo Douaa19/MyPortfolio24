@@ -21,11 +21,11 @@ function NavBar(props) {
           olr
         </span>
       </div>
-      <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ssm:fixed ssm:flex ssm:justify-end">
+      <div className="md:w-8/12 flex justify-end md:relative absolute ssm:fixed ssm:flex ssm:justify-end">
         <ul
           className={`${
             open ? `menu ${isOpen}` : "ssm:hidden"
-          } md:flex justify-between items-end w-full ssm:flex-col md:flex-row`}>
+          } md:flex justify-around items-end w-full ssm:flex-col md:flex-row`}>
           <li
             className={`${listClass} ${
               props.light
@@ -87,8 +87,15 @@ function NavBar(props) {
             contact
           </li>
         </ul>
+        <div className="relative w-fit md:block ssm:hidden">
+          <button
+            className={`outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
+            onClick={() => props.setLight(!props.light)}>
+            {props.light ? <Dark /> : <Light />}
+          </button>
+        </div>
       </div>
-      <div className="btns md:static flex justify-around items-center md:gap-2 w-max ssm:gap-2 ssm:right-8">
+      <div className="md:hidden flex justify-around items-center md:gap-2 w-max ssm:gap-2 ssm:right-8">
         <div className="relative w-fit">
           <button
             className={`outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
