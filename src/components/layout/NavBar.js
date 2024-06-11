@@ -88,51 +88,51 @@ function NavBar(props) {
           </li>
         </ul>
       </div>
-      <div className="btns md:static flex justify-between items-center md:gap-2 w-max ssm:gap-2 ssm:absolute ssm:right-8">
-        <div className="w-1 relative right-10">
+      <div className="btns md:static flex justify-around items-center md:gap-2 w-max ssm:gap-2 ssm:right-8">
+        <div className="relative w-fit">
           <button
             className={`outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
             onClick={() => props.setLight(!props.light)}>
             {props.light ? <Dark /> : <Light />}
           </button>
         </div>
-      </div>
-      <div className="md:hidden">
-        <button
-          className={`relative group flex items-center outline-none burger w-10 h-10 ${isOpen}`}
-          onClick={() => setOpen(!open)}>
-          <div
-            className={`relative flex items-center justify-center w-5 h-5 transform transition-all bg-none duration-200`}>
+        <div className="md:hidden">
+          <button
+            className={`relative group flex items-center outline-none burger w-10 h-10 ${isOpen}`}
+            onClick={() => setOpen(!open)}>
             <div
-              className={`flex flex-col justify-between w-[15px] h-[15px] transform transition-all duration-300 ${
-                open ? "group-focus:-rotate-[45deg] origin-center" : ""
-              }`}>
+              className={`relative flex items-center justify-center w-5 h-5 transform transition-all bg-none duration-200`}>
               <div
-                className={`${
-                  props.light ? `bg-dark` : `bg-white`
-                } h-[2px] w-1/2 rounded transform transition-all duration-300 ${
-                  open
-                    ? `
+                className={`flex flex-col justify-between w-[15px] h-[15px] transform transition-all duration-300 ${
+                  open ? "group-focus:-rotate-[45deg] origin-center" : ""
+                }`}>
+                <div
+                  className={`${
+                    props.light ? `bg-dark` : `bg-white`
+                  } h-[2px] w-1/2 rounded transform transition-all duration-300 ${
+                    open
+                      ? `
                         bg-white
                       group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px] ${open}`
-                    : ""
-                }`}></div>
-              <div
-                className={`h-[1px] rounded  ${open ? `bg-white` : ``}
+                      : ""
+                  }`}></div>
+                <div
+                  className={`h-[1px] rounded  ${open ? `bg-white` : ``}
                     ${props.light ? `bg-dark` : `bg-white`}
                   `}></div>
-              <div
-                className={`${
-                  props.light ? `bg-dark` : `bg-white`
-                } h-[2px] w-1/2 rounded self-end transform transition-all duration-300 ${
-                  open
-                    ? "bg-white group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]"
-                    : ""
-                }`}></div>
+                <div
+                  className={`${
+                    props.light ? `bg-dark` : `bg-white`
+                  } h-[2px] w-1/2 rounded self-end transform transition-all duration-300 ${
+                    open
+                      ? "bg-white group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]"
+                      : ""
+                  }`}></div>
+              </div>
             </div>
-          </div>
-        </button>
-        <div className={`background ${isOpen}`}></div>
+          </button>
+          <div className={`background ${isOpen}`}></div>
+        </div>
       </div>
     </div>
   );

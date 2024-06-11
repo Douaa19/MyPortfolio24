@@ -75,7 +75,7 @@ a.link:hover:after {
 }
 
 .background.open {
-  height: 300vh;
+  height: 310vh;
   opacity: 0.85;
   padding-right: 2rem;
 }
