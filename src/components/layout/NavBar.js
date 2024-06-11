@@ -14,7 +14,12 @@ function NavBar(props) {
     <div className="md:flex md:justify-between md:items-center w-full">
       <div className="flex items-end">
         <span className="text-main uppercase text-32 font-bold">d</span>
-        <span className="text-white uppercase text-24 font-bold">olr</span>
+        <span
+          className={`${
+            props.light ? `text-dark` : `text-white`
+          } uppercase text-24 font-bold`}>
+          olr
+        </span>
       </div>
       <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ssm:fixed">
         <ul
@@ -23,7 +28,14 @@ function NavBar(props) {
           } md:flex justify-between items-end w-full ssm:flex-col md:flex-row`}>
           <li
             className={`${listClass} ${
-              props.section === "about" ? "text-main" : "text-white"
+              props.light
+                ? `${
+                    props.section === "about" ? "text-main" : "text-white"
+                  } text-white`
+                : `${
+                    props.section === "about" ? "text-main" : "text-dark"
+                  } text-white`
+              // props.section === "about" ? "text-main" : "text-white"
             }`}
             onClick={() => props.setSection.setSection("about")}>
             <span className="appear text-white opacity-1">about</span>
