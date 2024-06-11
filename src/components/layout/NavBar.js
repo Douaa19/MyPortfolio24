@@ -15,7 +15,7 @@ function NavBar(props) {
       <div className="flex items-end">
         <span className="text-main uppercase text-32 font-bold">d</span>
         <span
-          className={`${
+          className={`ssm:transition ssm:duration-500 ${
             props.light ? `text-dark` : `text-white`
           } uppercase text-24 font-bold`}>
           olr
@@ -29,48 +29,59 @@ function NavBar(props) {
           <li
             className={`${listClass} ${
               props.light
-                ? `${
-                    props.section === "about" ? "text-main" : "text-white"
-                  } text-white`
-                : `${
-                    props.section === "about" ? "text-main" : "text-dark"
-                  } text-white`
-              // props.section === "about" ? "text-main" : "text-white"
+                ? `${props.section === "about" ? "text-main" : "text-dark"}`
+                : `${props.section === "about" ? "text-main" : "text-white"}`
             }`}
             onClick={() => props.setSection.setSection("about")}>
-            <span className="appear text-white opacity-1">about</span>
+            about
           </li>
           <li
             className={`${listClass} ${
-              props.section === "projects" ? "text-main" : "text-white"
+              props.light
+                ? `${props.section === "projects" ? "text-main" : "text-dark"}`
+                : `${props.section === "projects" ? "text-main" : "text-white"}`
             }`}
             onClick={() => props.setSection.setSection("projects")}>
             projects
           </li>
           <li
             className={`${listClass} ${
-              props.section === "skills" ? "text-main" : "text-white"
+              props.light
+                ? `${props.section === "skills" ? "text-main" : "text-dark"}`
+                : `${props.section === "skills" ? "text-main" : "text-white"}`
             }`}
             onClick={() => props.setSection.setSection("skills")}>
             skills
           </li>
           <li
             className={`${listClass} ${
-              props.section === "experience" ? "text-main" : "text-white"
+              props.light
+                ? `${
+                    props.section === "experience" ? "text-main" : "text-dark"
+                  }`
+                : `${
+                    props.section === "experience" ? "text-main" : "text-white"
+                  }`
             }`}
             onClick={() => props.setSection.setSection("experience")}>
             experience
           </li>
           <li
             className={`${listClass} ${
-              props.section === "education" ? "text-main" : "text-white"
+              props.light
+                ? `${props.section === "education" ? "text-main" : "text-dark"}`
+                : `${
+                    props.section === "education" ? "text-main" : "text-white"
+                  }`
             }`}
             onClick={() => props.setSection.setSection("education")}>
             education
           </li>
           <li
             className={`${listClass} ${
-              props.section === "contact" ? "text-main" : "text-white"
+              props.light
+                ? `${props.section === "contact" ? "text-main" : "text-dark"}`
+                : `${props.section === "contact" ? "text-main" : "text-white"}`
             }`}
             onClick={() => props.setSection.setSection("contact")}>
             contact
