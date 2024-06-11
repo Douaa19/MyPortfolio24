@@ -6,7 +6,10 @@ function Home() {
   const [light, setLight] = useState(false); // if false == dark mode is on
 
   return (
-    <div className={`w-full ${light ? "bg-white" : "bg-dark"}`}>
+    <div
+      className={`w-full ssm:transition ssm:duration-500 ${
+        light ? "bg-white" : "bg-dark"
+      }`}>
       <div className="flex flex-col items-center">
         <Header
           setSection={setSection}
