@@ -11,7 +11,7 @@ function NavBar(props) {
     "cursor-pointer uppercase px-2 py-0 ssm:py-2 md:mx-2 relative lg:text-16 hover:text-main sm:text-12 flex items-center ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4 md:hover:-translate-y-1 md:hover:-translate-x-0 ssm:hover:-translate-y-0";
 
   return (
-    <div className="md:flex md:justify-between md:items-center w-full">
+    <div className="md:flex md:justify-between md:items-center w-full relative ssm:flex ssm:justify-between ssm:items-center">
       <div className="flex items-end">
         <span className="text-main uppercase text-32 font-bold">d</span>
         <span
@@ -21,7 +21,7 @@ function NavBar(props) {
           olr
         </span>
       </div>
-      <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ssm:fixed">
+      <div className="md:w-8/12 flex justify-end md:relative absolute right-8 ssm:fixed ssm:flex ssm:justify-end">
         <ul
           className={`${
             open ? `menu ${isOpen}` : "ssm:hidden"
@@ -87,7 +87,9 @@ function NavBar(props) {
             contact
           </li>
         </ul>
-        <div className="w-1">
+      </div>
+      <div className="btns md:static flex justify-between items-center md:gap-2 w-max ssm:gap-2 ssm:absolute ssm:right-8">
+        <div className="w-1 relative right-10">
           <button
             className={`outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
             onClick={() => props.setLight(!props.light)}>
@@ -95,27 +97,34 @@ function NavBar(props) {
           </button>
         </div>
       </div>
-      {/* <div className="md:hidden">
+      <div className="md:hidden">
         <button
           className={`relative group flex items-center outline-none burger w-10 h-10 ${isOpen}`}
           onClick={() => setOpen(!open)}>
-          <div className="relative flex items-center justify-center w-5 h-5 transform transition-all bg-none duration-200">
+          <div
+            className={`relative flex items-center justify-center w-5 h-5 transform transition-all bg-none duration-200`}>
             <div
-              className={`flex col justify-between w-[15px] h-[15px] transform transition-all duration-300 ${
-                open ? `group-focus:-ratate-[45deg] origin-center` : ``
+              className={`flex flex-col justify-between w-[15px] h-[15px] transform transition-all duration-300 ${
+                open ? "group-focus:-rotate-[45deg] origin-center" : ""
               }`}>
               <div
-                className={`bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 ${
+                className={`${
+                  props.light ? `bg-dark` : `bg-white`
+                } h-[2px] w-1/2 rounded transform transition-all duration-300 ${
                   open
-                    ? `bg-white group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px] ${open}`
+                    ? `
+                        bg-white
+                      group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px] ${open}`
                     : ""
                 }`}></div>
               <div
-                className={`h-[1px] rounded ${
-                  open ? `bg-white` : `bg-white`
-                }`}></div>
+                className={`h-[1px] rounded  ${open ? `bg-white` : ``}
+                    ${props.light ? `bg-dark` : `bg-white`}
+                  `}></div>
               <div
-                className={`bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 ${
+                className={`${
+                  props.light ? `bg-dark` : `bg-white`
+                } h-[2px] w-1/2 rounded self-end transform transition-all duration-300 ${
                   open
                     ? "bg-white group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]"
                     : ""
@@ -123,7 +132,8 @@ function NavBar(props) {
             </div>
           </div>
         </button>
-      </div> */}
+        <div className={`background ${isOpen}`}></div>
+      </div>
     </div>
   );
 }

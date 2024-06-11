@@ -557,48 +557,8 @@ video {
   right: 2rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.top-0\.5 {
-  top: 0.125rem;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[-0\.5\] {
-  top: -0.5;
-}
-
-.top-\[-2\] {
-  top: -2;
-}
-
-.top-\[-1\] {
-  top: -1;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-\[65\] {
-  right: 65;
-}
-
-.right-\[-\] {
-  right: -;
+.right-10 {
+  right: 2.5rem;
 }
 
 .my-24 {
@@ -659,16 +619,8 @@ video {
   height: max-content;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-0 {
-  height: 0px;
+.w-1 {
+  width: 0.25rem;
 }
 
 .w-1\/2 {
@@ -711,12 +663,9 @@ video {
   width: 100%;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-1 {
-  width: 0.25rem;
+.w-max {
+  width: -webkit-max-content;
+  width: max-content;
 }
 
 .origin-center {
@@ -837,7 +786,7 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-black {
+.bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
@@ -850,11 +799,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-none {
@@ -936,6 +880,11 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-main {
   --tw-text-opacity: 1;
   color: rgb(116 105 173 / var(--tw-text-opacity));
@@ -944,11 +893,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -968,14 +912,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -986,10 +922,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
 }
 
 html {
@@ -1081,7 +1013,7 @@ a.link:hover:after {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   opacity: 0;
   visibility: hidden;
   transition: 0.05s;
@@ -1163,9 +1095,26 @@ body .menu ul li > a:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:focus .group-focus\:-rotate-\[45deg\] {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @media (min-width: 320px) {
   .ssm\:fixed {
     position: fixed;
+  }
+
+  .ssm\:absolute {
+    position: absolute;
+  }
+
+  .ssm\:right-8 {
+    right: 2rem;
+  }
+
+  .ssm\:flex {
+    display: flex;
   }
 
   .ssm\:hidden {
@@ -1176,8 +1125,24 @@ body .menu ul li > a:hover {
     flex-direction: column;
   }
 
+  .ssm\:items-center {
+    align-items: center;
+  }
+
+  .ssm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .ssm\:justify-between {
+    justify-content: space-between;
+  }
+
   .ssm\:gap-20 {
     gap: 5rem;
+  }
+
+  .ssm\:gap-2 {
+    gap: 0.5rem;
   }
 
   .ssm\:py-2 {
@@ -1231,6 +1196,10 @@ body .menu ul li > a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
   .md\:relative {
     position: relative;
   }
@@ -1238,6 +1207,10 @@ body .menu ul li > a:hover {
   .md\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -1268,6 +1241,10 @@ body .menu ul li > a:hover {
     gap: 10rem;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:text-16 {
     font-size: 16px;
   }
@@ -1278,10 +1255,6 @@ body .menu ul li > a:hover {
 
   .md\:text-28 {
     font-size: 28px;
-  }
-
-  .md\:text-14 {
-    font-size: 14px;
   }
 
   .md\:hover\:-translate-x-0:hover {
