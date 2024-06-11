@@ -7,6 +7,15 @@ function NavBar(props) {
 
   const isOpen = open ? "open" : "";
 
+  let links = [
+    { name: "about", link: "/" },
+    { name: "projects", link: "/best-selling" },
+    { name: "skills", link: "/products" },
+    { name: "experience", link: "/about" },
+    { name: "education", link: "/contact" },
+    { name: "contact", link: "/contact" },
+  ];
+
   const listClass =
     "cursor-pointer uppercase px-2 py-0 ssm:py-2 md:mx-2 relative lg:text-16 hover:text-main sm:text-12 flex items-center ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4 md:hover:-translate-y-1 md:hover:-translate-x-0 ssm:hover:-translate-y-0";
 
@@ -25,67 +34,31 @@ function NavBar(props) {
         <ul
           className={`${
             open ? `menu ${isOpen}` : "ssm:hidden"
-          } md:flex justify-around items-end w-full ssm:flex-col md:flex-row`}>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${props.section === "about" ? "text-main" : "text-dark"}`
-                : `${props.section === "about" ? "text-main" : "text-white"}`
-            }`}
-            onClick={() => props.setSection.setSection("about")}>
-            about
-          </li>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${props.section === "projects" ? "text-main" : "text-dark"}`
-                : `${props.section === "projects" ? "text-main" : "text-white"}`
-            }`}
-            onClick={() => props.setSection.setSection("projects")}>
-            projects
-          </li>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${props.section === "skills" ? "text-main" : "text-dark"}`
-                : `${props.section === "skills" ? "text-main" : "text-white"}`
-            }`}
-            onClick={() => props.setSection.setSection("skills")}>
-            skills
-          </li>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${
-                    props.section === "experience" ? "text-main" : "text-dark"
-                  }`
-                : `${
-                    props.section === "experience" ? "text-main" : "text-white"
-                  }`
-            }`}
-            onClick={() => props.setSection.setSection("experience")}>
-            experience
-          </li>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${props.section === "education" ? "text-main" : "text-dark"}`
-                : `${
-                    props.section === "education" ? "text-main" : "text-white"
-                  }`
-            }`}
-            onClick={() => props.setSection.setSection("education")}>
-            education
-          </li>
-          <li
-            className={`${listClass} ${
-              props.light
-                ? `${props.section === "contact" ? "text-main" : "text-dark"}`
-                : `${props.section === "contact" ? "text-main" : "text-white"}`
-            }`}
-            onClick={() => props.setSection.setSection("contact")}>
-            contact
-          </li>
+          } md:flex md:pr-0 md:justify-around md:flex-row w-full ssm:z-1 z-[1] capitalize ssm:flex ssm:flex-col ssm:items-end md:static ssm:pr-8 transition-all duration-100 ease-in ssm:opacity-100 opacity-0`}>
+          {links.map((link, index) => (
+            <li
+              key={index}
+              className="ssm:pt-2.5 md:pt-0"
+              onClick={() => props.setSection.setSection(link.name)}>
+              <span
+                style={{ animationDelay: `0.${index + 1}s` }}
+                className={`${listClass} ${
+                  props.light
+                    ? `${
+                        props.section === `${link.name}`
+                          ? "text-main"
+                          : "text-red"
+                      }`
+                    : `${
+                        props.section === `${link.name}`
+                          ? "text-main"
+                          : "text-white"
+                      }`
+                } ${open ? `appear text-white opacity-1` : ""}`}>
+                {link.name}
+              </span>
+            </li>
+          ))}
         </ul>
         <div className="relative w-fit md:block ssm:hidden">
           <button
