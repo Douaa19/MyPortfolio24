@@ -1,6 +1,5 @@
 import React from "react";
 import { HeroHeader, NavBar } from "./index";
-import { Introduction, Projects } from "../layout";
 
 function Header(props) {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Header } from "../components/layout";
+import { Header, Projects } from "../components/layout";
 
 function Home() {
   const [section, setSection] = useState(null);
@@ -17,6 +17,7 @@ function Home() {
           light={light}
           setLight={setLight}
         />
+        <Projects light={light} />
       </div>
     </div>
   );

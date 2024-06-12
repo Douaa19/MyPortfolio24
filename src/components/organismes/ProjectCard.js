@@ -1,27 +1,36 @@
 import React from "react";
 import ProjectImg from "../../assets/eren-yildiz-g6Wd6MS8lms-unsplash.jpg";
 
-function ProjectCard() {
+function ProjectCard({ title, post, technologies, description, link, light }) {
   return (
-    <div className="border border-white text-white rounded-md">
-      <div className="">
-        <img src={ProjectImg} alt="" className="rounded-t-md" />
-        <div className="flex flex-col gap-2 p-3">
-          <h2 className="uppercase text-16 font-bold">Project Title</h2>
-          <h3 className="uppercase text-16">Full Stack</h3>
-          <div className="uppercase flex gap-2 flex-wrap text-14">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Node js</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-          </div>
-          <p className="text-14">
-            The project is an e-commerce web site for peopel who loves sports.
-          </p>
-          <a href="/" className="hover:text-main">
-            https://link-to-the-project.io
+    <div class={`rounded-lg border ${light ? `text-dark` : `text-white`}`}>
+      <img
+        src={ProjectImg}
+        alt="project-img"
+        class="w-full h-48 rounded-t-md object-cover"
+      />
+      <div class="p-4">
+        <h2 className="uppercase md:text-18 ssm:text-14 font-bold">{title}</h2>
+        <h3 className="uppercase md:text-16 ssm:text-12">{post}</h3>
+        <div className="flex flex-wrap flex-row gap-2">
+          {technologies.map((techno, index) => (
+            <span
+              className={`${
+                light ? `text-dark` : `text-white`
+              } md:text-16 ssm:text-12`}
+              key={index}>
+              {techno}
+            </span>
+          ))}
+        </div>
+        <p class="md:text-14 ssm:text-12">{description}</p>
+        <div className="">
+          <a
+            href="/"
+            className={`hover:text-main md:text-14 ssm:text-12 ${
+              light ? `text-dark` : `text-white`
+            }`}>
+            {link}
           </a>
         </div>
       </div>

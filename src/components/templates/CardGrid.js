@@ -1,9 +1,11 @@
 import React from "react";
 import { ProjectCard } from "../organismes";
 import Slider from "react-slick";
+import { ReactComponent as Next } from "../../assets/arrow-next-small-svgrepo-com.svg";
+import { ReactComponent as Prev } from "../../assets/arrow-prev-small-svgrepo-com.svg";
 
-function CardGrid() {
-  const myArr = [1, 2, 3, 4, 5];
+function CardGrid(props) {
+  const myArr = [1, 2, 3, 4, 5, 6];
   const settings = {
     dots: true,
     Infinite: true,
@@ -11,52 +13,49 @@ function CardGrid() {
     autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // nextArrow: false,
-    // prevArrow: false,
-    useTransform: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-    ],
+    nextArrow: <Next />,
+    prevArrow: <Prev />,
+    // useTransform: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 800,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    // ],
   };
 
   return (
-    <div className="w-[10%] border-main border-8">
-      <Slider {...settings} className="border-dark border-8 w-[10%]">
-        {myArr.map((i, index) => (
-          <div className="flex gap-4 w-full" key={index}>
-            <div className="bg-white shadow-lg animate-pulse h-[448px] rounded-5">
-              <div className="flex justify-center items-center h-[366px] bg-gray-300 rounded-5"></div>
-              <div className="flex flex-col justify-center items-start gap-4 p-4">
-                <div className="h-[21px] bg-gray-300 w-full mb-2"></div>
-                <div className="h-[21px] bg-gray-300 w-8"></div>
-              </div>
-            </div>
+    <div className="w-[90%]">
+      <div class="flex items-center justify-center">
+        <div class="container mx-auto p-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+            {props.projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                post={project.post}
+                technologies={project.technologies}
+                description={project.description}
+                link={project.link}
+                light={props.light}
+              />
+            ))}
           </div>
-        ))}
-        {/* <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard /> */}
-      </Slider>
+        </div>
+      </div>
     </div>
   );
 }
