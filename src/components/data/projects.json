@@ -7,11 +7,11 @@
         "link": "https://github.com/Douaa19/STOREEZ"
     },
     {
-        "title": "project2",
-        "post": "post2",
-        "technologies": [1,2,3,4,5,6],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
+        "title": "Originart",
+        "post": "Full Stack",
+        "technologies": ["HTM", "CSS", "PHP"],
+        "description": "This project is for showing the projects of the Originart agency, the web site contain a ontact form created using PHP Mailer.",
+        "link": "https://originart.ma"
     },
     {
         "title": "project3",
