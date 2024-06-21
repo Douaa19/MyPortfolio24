@@ -21,12 +21,9 @@ function ProjectCard({
         class="w-full h-48 rounded-t-md object-cover"
       />
       <div class="p-4">
-        <h2 className="uppercase md:text-18 ssm:text-14 font-bold">
-          title: {title}
-        </h2>
-        <h3 className="uppercase md:text-16 ssm:text-12">role: {post}</h3>
+        <h2 className="uppercase md:text-18 ssm:text-14 font-bold">{title}</h2>
+        <h3 className="uppercase md:text-16 ssm:text-12">{post}</h3>
         <div className="flex flex-wrap flex-row gap-2">
-          technologies:
           {technologies.map((techno, index) => (
             <span
               className={`${
@@ -37,14 +34,14 @@ function ProjectCard({
             </span>
           ))}
         </div>
-        <p class="md:text-14 ssm:text-12">description: {description}</p>
+        <p class="md:text-14 ssm:text-12">{description}</p>
         <div className="">
           <a
             href="/"
             className={`hover:text-main md:text-14 ssm:text-12 ${
               light ? `text-dark` : `text-white`
             }`}>
-            link: {link}
+            {link}
           </a>
         </div>
       </div>

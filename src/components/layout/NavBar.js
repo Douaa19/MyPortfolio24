@@ -40,14 +40,15 @@ function NavBar(props) {
               key={index}
               className="ssm:pt-2.5 md:pt-0"
               onClick={() => props.setSection.setSection(link.name)}>
-              <span
+              <a
+                href={`#${link.name}`}
                 style={{ animationDelay: `0.${index + 1}s` }}
                 className={`${listClass} ${
                   props.light
                     ? `${
                         props.section === `${link.name}`
                           ? "text-main"
-                          : "text-red"
+                          : "text-dark"
                       }`
                     : `${
                         props.section === `${link.name}`
@@ -56,7 +57,7 @@ function NavBar(props) {
                       }`
                 } ${open ? `appear text-white opacity-1` : ""}`}>
                 {link.name}
-              </span>
+              </a>
             </li>
           ))}
         </ul>
