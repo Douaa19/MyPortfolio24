@@ -14,37 +14,37 @@
         "link": "https://originart.ma"
     },
     {
-        "title": "project3",
-        "post": "post3",
-        "technologies": [1,2,3,4,5,6],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
+        "title": "UUD",
+        "post": "Full Stack",
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
+        "description": "The mission was to create the backend using Node js, Express js and MongoDb for the database. In addetion, I helped in the frontend by using Soket.io for a real time chat.",
+        "link": "https://uud.io"
     },
     {
         "title": "project4",
         "post": "post4",
-        "technologies": [1,2,3,4,5,6],
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
         "description": "descThe project is an e-commerce web site for peopel who loves sports.",
         "link": "https://link-to-the-project.io"
     },
     {
         "title": "project5",
         "post": "post5",
-        "technologies": [1,2,3,4,5,6],
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
         "description": "descThe project is an e-commerce web site for peopel who loves sports.",
         "link": "https://link-to-the-project.io"
     },
     {
         "title": "project6",
         "post": "post6",
-        "technologies": [1,2,3,4,5,6],
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
         "description": "descThe project is an e-commerce web site for peopel who loves sports.",
         "link": "https://link-to-the-project.io"
     },
     {
         "title": "project7",
         "post": "post7",
-        "technologies": [1,2,3,4,5,6],
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
         "description": "descThe project is an e-commerce web site for peopel who loves sports.",
         "link": "https://link-to-the-project.io"
     }

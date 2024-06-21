@@ -632,6 +632,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -671,6 +675,31 @@ video {
 .h-max {
   height: -webkit-max-content;
   height: max-content;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.max-h-max {
+  max-height: -webkit-max-content;
+  max-height: max-content;
+}
+
+.max-h-full {
+  max-height: 100%;
 }
 
 .w-1\/2 {
