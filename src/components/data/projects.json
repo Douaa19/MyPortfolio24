@@ -1,10 +1,10 @@
 [
     {
-        "title": "project1",
-        "post": "post1",
-        "technologies": [1,2,3,4,5,6],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
+        "title": "STOREEZ",
+        "post": "Full Stack",
+        "technologies": ["PHP", "LARAVEL", "HTML", "CSS"],
+        "description": "Our mission in this project was to modify the frontend and the backend of an existing E-commerce project. The mission toke two months. We collaborate three members to complete this project.",
+        "link": "https://github.com/Douaa19/STOREEZ"
     },
     {
         "title": "project2",

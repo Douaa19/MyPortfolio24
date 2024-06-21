@@ -11,7 +11,7 @@ function CardGrid(props) {
     Infinite: true,
     speed: 500,
     autoplay: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <Next />,
     prevArrow: <Prev />,
@@ -20,8 +20,8 @@ function CardGrid(props) {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -30,8 +30,16 @@ function CardGrid(props) {
         breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
     ],
@@ -57,20 +65,6 @@ function CardGrid(props) {
               </>
             ))}
           </Slider>
-          {/* <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-            {props.projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                post={project.post}
-                technologies={project.technologies}
-                description={project.description}
-                link={project.link}
-                light={props.light}
-                tansition={false}
-              />
-            ))}
-          </div> */}
         </div>
       </div>
     </div>

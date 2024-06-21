@@ -618,6 +618,16 @@ video {
   margin-bottom: 6rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -825,6 +835,10 @@ video {
   padding: 12px;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-2 {
   padding-left: 4px;
   padding-right: 4px;
@@ -838,6 +852,11 @@ video {
 .py-4 {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-4 {
@@ -858,10 +877,6 @@ video {
 
 .text-start {
   text-align: start;
-}
-
-.text-12 {
-  font-size: 12px;
 }
 
 .text-24 {
@@ -915,6 +930,18 @@ video {
   opacity: 0;
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -950,8 +977,16 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -1101,20 +1136,34 @@ body .menu ul li > a:hover {
 
 /* menu */
 
-.card-item {
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.01), 0px 2px 2px rgba(0, 0, 0, 0.04),
-    0px 1px 1px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.07),
-    0px 0px 0px rgba(0, 0, 0, 0.07);
-  transition: all 0.08s ease-in-out;
+.hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.card-item:hover {
-  transform: translateY(-5px);
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:text-main:hover {
   --tw-text-opacity: 1;
   color: rgb(116 105 173 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-md:hover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .group:focus .group-focus\:h-\[1px\] {
@@ -1160,6 +1209,14 @@ body .menu ul li > a:hover {
 
   .ssm\:hidden {
     display: none;
+  }
+
+  .ssm\:h-1 {
+    height: 0.25rem;
+  }
+
+  .ssm\:w-1 {
+    width: 0.25rem;
   }
 
   .ssm\:flex-col {
@@ -1255,6 +1312,14 @@ body .menu ul li > a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-2 {
+    height: 0.5rem;
+  }
+
+  .sm\:w-2 {
+    width: 0.5rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1380,3 +1445,4 @@ body .menu ul li > a:hover {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+

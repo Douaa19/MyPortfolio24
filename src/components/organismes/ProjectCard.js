@@ -12,13 +12,13 @@ function ProjectCard({
 }) {
   return (
     <div
-      class={`rounded-lg border ${light ? `text-dark` : `text-white`} ${
-        transition === true ? `card-item` : ``
-      } mx-4`}>
+      class={`rounded-lg border opacity-img hover:cursor-pointer ${
+        light ? `text-dark` : `text-white`
+      } hover:shadow-md hover:-translate-y-1 transition duration-200 ease-in-out mx-4 my-2`}>
       <img
         src={ProjectImg}
         alt="project-img"
-        class="w-full h-48 rounded-t-md object-cover"
+        class="w-full relative h-48 rounded-t-md object-cover"
       />
       <div class="p-4">
         <h2 className="uppercase md:text-18 ssm:text-14 font-bold">{title}</h2>
@@ -36,12 +36,15 @@ function ProjectCard({
         </div>
         <p class="md:text-14 ssm:text-12">{description}</p>
         <div className="">
+          Link:{" "}
           <a
-            href="/"
+            href={`${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`hover:text-main md:text-14 ssm:text-12 ${
               light ? `text-dark` : `text-white`
             }`}>
-            {link}
+            {title}
           </a>
         </div>
       </div>
