@@ -5,7 +5,6 @@ import { ReactComponent as Next } from "../../assets/arrow-next-small-svgrepo-co
 import { ReactComponent as Prev } from "../../assets/arrow-prev-small-svgrepo-com.svg";
 
 function CardGrid(props) {
-  const myArr = [1, 2, 3, 4, 5, 6];
   const settings = {
     dots: false,
     Infinite: true,

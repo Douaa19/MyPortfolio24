@@ -35,7 +35,7 @@ function ProjectCard({
                 light ? `text-dark` : `text-white`
               } md:text-16 ssm:text-12 mr-1`}
               key={index}>
-              {techno}
+              {techno},
             </span>
           ))}
         </div>

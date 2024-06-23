@@ -21,31 +21,17 @@
         "link": "https://uud.io"
     },
     {
-        "title": "project4",
-        "post": "post4",
-        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
+        "title": "Colleg Assesst",
+        "post": "Backend Developer",
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI"],
+        "description": "My six months experience of internship in SmartPeddle company, my mission was to stractured the database and create the REstAPI using Node js and Express js.",
+        "link": "https://github.com/Douaa19/CollegeAssistAPI"
     },
     {
-        "title": "project5",
-        "post": "post5",
-        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
-    },
-    {
-        "title": "project6",
-        "post": "post6",
-        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
-    },
-    {
-        "title": "project7",
-        "post": "post7",
-        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
-        "description": "descThe project is an e-commerce web site for peopel who loves sports.",
-        "link": "https://link-to-the-project.io"
+        "title": "Saba Embroidery",
+        "post": "Full Stack",
+        "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "TailwindCSS"],
+        "description": "This project is a freelance mission. The project is an e-commerce project where the admin can do the CRUD operations easily. Aslo he can find all the orders and the clients.",
+        "link": "https://sabaembroidery.onrender.com"
     }
 ]
