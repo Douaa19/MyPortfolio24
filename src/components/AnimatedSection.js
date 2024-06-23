@@ -2,24 +2,26 @@ import React, { useState, useEffect } from "react";
 
 function AnimatedSection({ children, id }) {
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById(id);
-      const rect = section.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
-      const offset = rect.top + rect.height - viewportHeight;
+      if (section && !hasAnimated) {
+        const rect = section.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const offset = rect.top + rect.height - viewportHeight;
 
-      if (window.scroll > offset) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+        if (window.scrollY > offset) {
+          setIsVisible(true);
+          setHasAnimated(true);
+        }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll");
-  }, [id]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [id, hasAnimated]);
 
   return (
     <>
@@ -27,7 +29,7 @@ function AnimatedSection({ children, id }) {
         id={id}
         className={`${
           isVisible ? "animate-fadeInUp" : "opacity-0"
-        } tansition duration-500 ease-in-out`}>
+        } transition duration-500 ease-in-out flex justify-center items-center`}>
         {children}
       </div>
     </>

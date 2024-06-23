@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Header, Projects } from "../components/layout";
+import AnimatedSection from "../components/AnimatedSection";
 
 function Home() {
   const [section, setSection] = useState(null);
@@ -17,7 +18,9 @@ function Home() {
           light={light}
           setLight={setLight}
         />
-        <Projects light={light} />
+        <AnimatedSection id="projects">
+          <Projects light={light} />
+        </AnimatedSection>
       </div>
     </div>
   );
