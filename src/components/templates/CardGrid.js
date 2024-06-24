@@ -66,6 +66,7 @@ function CardGrid(props) {
                   technologies={project.technologies}
                   description={project.description}
                   link={project.link}
+                  img={project.img}
                   light={props.light}
                   tansition={false}
                 />

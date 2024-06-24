@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectImg from "../../assets/eren-yildiz-g6Wd6MS8lms-unsplash.jpg";
 
 function ProjectCard({
   title,
@@ -7,6 +6,7 @@ function ProjectCard({
   technologies,
   description,
   link,
+  img,
   light,
   transition,
 }) {
@@ -17,7 +17,7 @@ function ProjectCard({
       } hover:shadow-md hover:-translate-y-1 transition duration-500 ease-in-out mx-4 my-2`}
       onClick={() => window.open(link, "_blank")}>
       <img
-        src={ProjectImg}
+        src={img}
         alt="project-img"
         class="w-full relative h-48 rounded-t-md object-cover"
       />

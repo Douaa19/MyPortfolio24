@@ -4,7 +4,7 @@ import ProfileImg from "../../assets/Profile.JPG";
 function HeroHeader(props) {
   return (
     <div className="relative flex justify-center items-center md:gap-40 ssm:gap-20 h-[80vh]">
-      <div className="w-24 animate">
+      <div className="w-28 animate">
         <img
           src={ProfileImg}
           alt="profile_img"
