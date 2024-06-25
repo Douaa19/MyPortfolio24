@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as Dark } from "../../assets/moon-svgrepo-com.svg";
 import { ReactComponent as Light } from "../../assets/sun-svgrepo-com.svg";
+import MyResume from "file:///C:/Users/Youcode/Documents/CV/En%20Douaa%20Larif%20Resume.pdf";
 
 function NavBar(props) {
   let [open, setOpen] = useState(false);
@@ -13,6 +14,10 @@ function NavBar(props) {
     { name: "skills", link: "/skills" },
     { name: "education", link: "/education" },
     { name: "contact", link: "/contact" },
+    {
+      name: "resume",
+      link: MyResume,
+    },
   ];
 
   const listClass =
@@ -39,24 +44,46 @@ function NavBar(props) {
               key={index}
               className="ssm:pt-2.5 md:pt-0"
               onClick={() => props.setSection.setSection(link.name)}>
-              <a
-                href={`#${link.name}`}
-                style={{ animationDelay: `0.${index + 1}s` }}
-                className={`${listClass} ${
-                  props.light
-                    ? `${
-                        props.section === `${link.name}`
-                          ? "text-main"
-                          : "text-dark"
-                      }`
-                    : `${
-                        props.section === `${link.name}`
-                          ? "text-main"
-                          : "text-white"
-                      }`
-                } ${open ? `appear text-white opacity-1` : ""}`}>
-                {link.name}
-              </a>
+              {link.name !== "resume" ? (
+                <a
+                  href={`#${link.name}`}
+                  style={{ animationDelay: `0.${index + 1}s` }}
+                  className={`${listClass} ${
+                    props.light
+                      ? `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-dark"
+                        }`
+                      : `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-white"
+                        }`
+                  } ${open ? `appear text-white opacity-1` : ""}`}>
+                  {link.name}
+                </a>
+              ) : (
+                <a
+                  href={`${link.link}`}
+                  download
+                  style={{ animationDelay: `0.${index + 1}s` }}
+                  className={`${listClass} ${
+                    props.light
+                      ? `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-dark"
+                        }`
+                      : `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-white"
+                        }`
+                  } ${open ? `appear text-white opacity-1` : ""}`}>
+                  {link.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>
