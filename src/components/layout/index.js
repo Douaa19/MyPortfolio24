@@ -8,6 +8,7 @@ import Introduction from "./Introduction";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Education from "./Education";
+import Contact from "./Contact";
 
 export {
   About,
@@ -20,4 +21,5 @@ export {
   Introduction,
   Skills,
   Education,
+  Contact,
 };
