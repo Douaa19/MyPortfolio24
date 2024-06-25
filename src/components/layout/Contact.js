@@ -1,6 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact(props) {
+  const [data, setData] = useState({});
+  const [errors, setErrors] = useState({});
+
+  const handleChange = async (element, value) => {
+    const newData = { ...data, [`${element}`]: value };
+    setData(newData);
+  };
+
+  const handleSubmit = async () => {
+    let errors = validateForm(data);
+
+    if (Object.keys(errors).length === 0) {
+      console.log(data);
+    } else {
+      console.log(errors);
+    }
+  };
+
+  const validateForm = (data) => {
+    const errors = {};
+
+    if (!data.name) {
+      errors.name = "Name is required";
+    } else if (data.name.length < 5 || data.name.length > 12) {
+      errors.name = "Name must be between 5 and 12 characters";
+    }
+
+    if (!data.email) {
+      errors.email = "Email is required";
+    } else if (!isValidEmail(data.email)) {
+      errors.email = "Invalid email address";
+    }
+
+    if (!data.message) {
+      errors.message = "Message is required";
+    } else if (data.message.length < 10 || data.message.length > 200) {
+      errors.message = "Message must be between 10 and 200 characters";
+    }
+
+    setErrors(errors);
+    return errors;
+  };
+
+  const isValidEmail = (email) => {
+    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      email
+    );
+  };
+
   return (
     <div
       className={`pb-8 flex justify-center items-center ${
@@ -25,12 +74,18 @@ function Contact(props) {
                     props.light ? `focus:border-dark` : `focus:border-white`
                   } focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50`}
                   placeHolder=" "
+                  name="name"
+                  onChange={(e) => handleChange("name", e.target.value)}
                 />
                 <label
                   className={`before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight ${
-                    props.light
-                      ? `peer-focus:text-dark`
-                      : `peer-focus:text-white`
+                    errors.name
+                      ? `text-red`
+                      : `${
+                          props.light
+                            ? `peer-focus:text-dark`
+                            : `peer-focus:text-white`
+                        }`
                   } peer-focus:before:border-t-2 peer-focus:before:border-l-2 ${
                     props.light
                       ? `peer-focus:before:!border-dark`
@@ -40,7 +95,7 @@ function Contact(props) {
                       ? `peer-focus:after:!border-dark`
                       : `peer-focus:after:!border-white`
                   } peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500`}>
-                  Name
+                  {errors.name ? `${errors.name}` : `Name`}
                 </label>
               </div>
               <div className="relative h-11 w-full min-w-[200px]">
@@ -49,12 +104,18 @@ function Contact(props) {
                     props.light ? `focus:border-dark` : `focus:border-white`
                   } focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50`}
                   placeHolder=" "
+                  name="email"
+                  onChange={(e) => handleChange("email", e.target.value)}
                 />
                 <label
                   className={`before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight ${
-                    props.light
-                      ? `peer-focus:text-dark`
-                      : `peer-focus:text-white`
+                    errors.email
+                      ? `text-red`
+                      : `${
+                          props.light
+                            ? `peer-focus:text-dark`
+                            : `peer-focus:text-white`
+                        }`
                   } peer-focus:before:border-t-2 peer-focus:before:border-l-2 ${
                     props.light
                       ? `peer-focus:before:!border-dark`
@@ -64,7 +125,7 @@ function Contact(props) {
                       ? `peer-focus:after:!border-dark`
                       : `peer-focus:after:!border-white`
                   } peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500`}>
-                  Email
+                  {errors.email ? `${errors.email}` : `Email`}
                 </label>
               </div>
               <div className="relative h-11 w-full min-w-[200px]">
@@ -74,12 +135,18 @@ function Contact(props) {
                   } focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 min-h-[80px] resize-y`}
                   placeholder=" "
                   rows={3}
+                  name="message"
+                  onChange={(e) => handleChange("message", e.target.value)}
                 />
                 <label
                   className={`before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight ${
-                    props.light
-                      ? `peer-focus:text-dark`
-                      : `peer-focus:text-white`
+                    errors.message
+                      ? `text-red`
+                      : `${
+                          props.light
+                            ? `peer-focus:text-dark`
+                            : `peer-focus:text-white`
+                        }`
                   } peer-focus:before:border-t-2 peer-focus:before:border-l-2 ${
                     props.light
                       ? `peer-focus:before:!border-dark`
@@ -89,7 +156,7 @@ function Contact(props) {
                       ? `peer-focus:after:!border-dark`
                       : `peer-focus:after:!border-white`
                   } peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500`}>
-                  Your message!
+                  {errors.message ? `${errors.message}` : `Your message!`}
                 </label>
               </div>
             </div>
@@ -100,6 +167,7 @@ function Contact(props) {
                   : `text-white border-white hover:shadow-white`
               } shadow-sm transition-all hover:shadow-md focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
               type="button"
+              onClick={() => handleSubmit()}
               data-ripple-light="true">
               Contact
             </button>
