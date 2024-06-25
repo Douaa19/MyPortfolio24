@@ -3,7 +3,7 @@ import React from "react";
 function About(props) {
   return (
     <div className={`pb-8 flex justify-center items-center w-full`} id="about">
-      <div className="flex flex-col justify-center items-start w-11/12">
+      <div className="flex flex-col justify-center items-start w-10/12">
         <div className="md:mb-4 ssm:mb-4">
           <h2
             className={`uppercase md:text-28 ssm:text-24 font-bold ${
@@ -12,8 +12,11 @@ function About(props) {
             about
           </h2>
         </div>
-        <div className="">
-          <div className={`${props.light ? `text-dark` : `text-white`} px-4 flex flex-col gap-3`}>
+        <div className="w-full flex justify-center items-center">
+          <div
+            className={`${
+              props.light ? `text-dark` : `text-white`
+            } w-2/3 px-4 flex flex-col gap-3 text-justify`}>
             <p>
               Welcome to my portfolio! As a web developer with a passion for
               crafting dynamic and user-friendly websites. With strong
@@ -24,7 +27,7 @@ function About(props) {
             </p>
             <p>
               Through my experience, I have honed my skills in HTML, CSS,
-              JavaScript, and various framworks like Vue js and React js, along
+              JavaScript, and various framworks like React js and Vue js, along
               with back-end technologies such as Node js and PHP. Always staying
               up-to-date with the latest trends and best practices.
             </p>
