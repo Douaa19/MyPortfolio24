@@ -11,7 +11,6 @@ function NavBar(props) {
     { name: "about", link: "/" },
     { name: "projects", link: "/projects" },
     { name: "skills", link: "/skills" },
-    { name: "experience", link: "/experience" },
     { name: "education", link: "/education" },
     { name: "contact", link: "/contact" },
   ];
