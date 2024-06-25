@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 import Introduction from "./Introduction";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Experience from "./Experience";
+import Education from "./Education";
 
 export {
   About,
@@ -19,5 +19,5 @@ export {
   NavBar,
   Introduction,
   Skills,
-  Experience,
+  Education,
 };

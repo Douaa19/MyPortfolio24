@@ -24,10 +24,10 @@
         "img": "img/UUD.png"
     },
     {
-        "title": "Colleg Assesst",
+        "title": "Colleg Assist",
         "post": "Backend Developer",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI"],
-        "description": "My six months experience of internship in SmartPeddle company, my mission was to stractured the database and create the REstAPI using Node js and Express js.",
+        "description": "My six months experience of internship in SmartPeddle company, my mission was to stractured the database and create the REST API using Node js and Express js.",
         "link": "https://github.com/Douaa19/CollegeAssistAPI",
         "img": "img/CollegeAssest.png"
     },
