@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import NavBar from "./NavBar";
 import Introduction from "./Introduction";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 export {
   About,
@@ -16,4 +17,5 @@ export {
   Menu,
   NavBar,
   Introduction,
+  Skills,
 };

@@ -6,7 +6,6 @@ import { ReactComponent as Prev } from "../../assets/arrow-prev-small-svgrepo-co
 
 function CardGrid(props) {
   const settings = {
-    dots: false,
     Infinite: true,
     speed: 500,
     autoplay: true,
@@ -22,7 +21,6 @@ function CardGrid(props) {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
