@@ -9,10 +9,10 @@ function NavBar(props) {
 
   let links = [
     { name: "about", link: "/" },
-    { name: "projects", link: "/best-selling" },
-    { name: "skills", link: "/products" },
-    { name: "experience", link: "/about" },
-    { name: "education", link: "/contact" },
+    { name: "projects", link: "/projects" },
+    { name: "skills", link: "/skills" },
+    { name: "experience", link: "/experience" },
+    { name: "education", link: "/education" },
     { name: "contact", link: "/contact" },
   ];
 

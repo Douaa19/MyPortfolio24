@@ -722,6 +722,10 @@ video {
   width: max-content;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -784,10 +788,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
