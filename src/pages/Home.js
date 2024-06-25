@@ -6,6 +6,7 @@ import {
   Skills,
   Education,
   Contact,
+  Footer,
 } from "../components/layout";
 import AnimatedSection from "../components/AnimatedSection";
 
@@ -39,6 +40,9 @@ function Home() {
         </AnimatedSection>
         <AnimatedSection id="contact">
           <Contact light={light} />
+        </AnimatedSection>
+        <AnimatedSection id="footer">
+          <Footer light={light} />
         </AnimatedSection>
       </div>
     </div>

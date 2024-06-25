@@ -634,12 +634,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-3 {
@@ -658,24 +658,12 @@ video {
   margin-right: 1rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .block {
@@ -692,6 +680,10 @@ video {
 
 .h-11 {
   height: 2.75rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-48 {
@@ -729,6 +721,10 @@ video {
 .h-max {
   height: -webkit-max-content;
   height: max-content;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .min-h-\[80px\] {
@@ -953,9 +949,24 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-main {
+  --tw-border-opacity: 1;
+  border-color: rgb(116 105 173 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-t-white {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-t-dark {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-dark {
@@ -986,6 +997,10 @@ video {
 
 .p-4 {
   padding: 12px;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -1340,7 +1355,7 @@ body .menu ul li > a:hover {
 #projects,
 #skills,
 #education,
-#contact {
+#contact, #footer {
   width: 100% !important;
 }
 

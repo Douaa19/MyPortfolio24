@@ -147,7 +147,7 @@ body .menu ul li > a:hover {
 #projects,
 #skills,
 #education,
-#contact {
+#contact, #footer {
   width: 100% !important;
 }
 
