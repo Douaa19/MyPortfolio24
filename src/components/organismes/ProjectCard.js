@@ -12,7 +12,7 @@ function ProjectCard({
 }) {
   return (
     <div
-      class={`rounded-lg border opacity-img hover:cursor-pointer transition-all h-[400px] ${
+      class={`rounded-lg border opacity-img hover:cursor-pointer transition-all md:h-[430px] ssm:h-[400px] ${
         light ? `text-dark` : `text-white`
       } hover:shadow-md hover:-translate-y-1 transition duration-500 ease-in-out mx-4 my-2`}
       onClick={() => window.open(link, "_blank")}>
