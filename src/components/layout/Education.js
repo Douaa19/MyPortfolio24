@@ -25,7 +25,7 @@ function Education(props) {
               youcode - youssoufia
             </h3>
             <div className="capitalize flex justify-between items-start md:text-14 ssm:text-12">
-              <span className="w-1/2">web development</span>
+              <span className="w-2/3">web development</span>
               <span>2020 - 2022</span>
             </div>
           </div>
@@ -37,7 +37,7 @@ function Education(props) {
               actschool - youssoufia
             </h3>
             <div className="capitalize flex justify-between items-start md:text-14 ssm:text-12">
-              <span className="w-1/2">personal development</span>
+              <span className="w-2/3">personal development</span>
               <span>2019 - 2020</span>
             </div>
           </div>
@@ -49,7 +49,7 @@ function Education(props) {
               ista - el jadida
             </h3>
             <div className="capitalize flex justify-between items-start md:text-14 ssm:text-12">
-              <span className="w-1/2">
+              <span className="w-2/3">
                 Technical Specialist in Electromechanics of Automated Systems
               </span>
               <span>2014 - 2016</span>
