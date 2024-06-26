@@ -48,7 +48,10 @@ function NavBar(props) {
                 <a
                   href={`#${link.name}`}
                   style={{ animationDelay: `0.${index + 1}s` }}
-                  onClick={() => props.setSection.setSection(link.name)}
+                  onClick={() => {
+                    props.setSection.setSection(link.name);
+                    setOpen(false);
+                  }}
                   className={`${listClass} ${
                     props.light
                       ? `${
@@ -69,6 +72,7 @@ function NavBar(props) {
               ) : (
                 <a
                   href={`${link.link}`}
+                  onClick={() => setOpen(false)}
                   download
                   style={{ animationDelay: `0.${index + 1}s` }}
                   className={`${listClass} ${
@@ -103,7 +107,9 @@ function NavBar(props) {
       <div className="md:hidden flex justify-between items-center md:gap-2 w-max ssm:gap-2 ssm:absolute ssm:right-0">
         <div className="relative w-fit">
           <button
-            className={`${isOpen ? `absolute sm:right-10 ssm:right-12` : ``} outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
+            className={`${
+              isOpen ? `absolute sm:right-10 ssm:right-12` : ``
+            } outline-node cursor-pointer px-2 py-0 ssm:py-2 md:mx-2 relative flex items-center`}
             onClick={() => props.setLight(!props.light)}>
             {props.light ? <Dark /> : <Light />}
           </button>
