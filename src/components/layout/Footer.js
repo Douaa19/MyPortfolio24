@@ -3,6 +3,8 @@ import { ReactComponent as LinkedInWhite } from "../../assets/linkedin-white-svg
 import { ReactComponent as LinkedInDark } from "../../assets/linkedin-dark-svgrepo-com.svg";
 import { ReactComponent as ResumeWhite } from "../../assets/resume-4-white-svgrepo-com.svg";
 import { ReactComponent as ResumeDark } from "../../assets/resume-4-dark-svgrepo-com.svg";
+import { ReactComponent as GitHubDark } from "../../assets/github-142-black-svgrepo-com.svg";
+import { ReactComponent as GitHubWhite } from "../../assets/github-142-white-svgrepo-com.svg";
 import MyResume from "file:///C:/Users/Youcode/Documents/CV/En%20Douaa%20Larif%20Resume.pdf";
 
 function Footer(props) {
@@ -26,6 +28,9 @@ function Footer(props) {
               href="https://www.linkedin.com/in/douaa-larif-07279a20b/"
               className="w-full">
               {props.light ? <LinkedInDark /> : <LinkedInWhite />}
+            </a>
+            <a href="https://github.com/Douaa19" className="w-full">
+              {props.light ? <GitHubWhite /> : <GitHubDark />}
             </a>
             <a href={MyResume} download className="w-full">
               {props.light ? <ResumeDark /> : <ResumeWhite />}
