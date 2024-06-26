@@ -1,11 +1,12 @@
 import React from "react";
 import ProfileImg from "../../assets/Profile.JPG";
+import { Img } from "react-image";
 
 function HeroHeader(props) {
   return (
     <div className="relative flex justify-center items-center md:gap-40 ssm:gap-20 h-[80vh]">
       <div className="w-48 animate">
-        <img
+        <Img
           src={ProfileImg}
           alt="profile_img"
           className="w-auto rounded-full"
