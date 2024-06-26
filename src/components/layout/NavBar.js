@@ -53,17 +53,7 @@ function NavBar(props) {
                     setOpen(false);
                   }}
                   className={`${listClass} ${
-                    props.light
-                      ? `${
-                          props.section === `${link.name}`
-                            ? "text-main"
-                            : "text-dark"
-                        }`
-                      : `${
-                          props.section === `${link.name}`
-                            ? "text-main"
-                            : "text-white"
-                        }`
+                    props.light ? "text-dark" : "text-white"
                   } ${
                     open ? `appear text-white opacity-1` : ""
                   } custom-list list`}>
@@ -77,16 +67,8 @@ function NavBar(props) {
                   style={{ animationDelay: `0.${index + 1}s` }}
                   className={`${listClass} ${
                     props.light
-                      ? `${
-                          props.section === `${link.name}`
-                            ? "text-main"
-                            : "text-dark"
-                        }`
-                      : `${
-                          props.section === `${link.name}`
-                            ? "text-main"
-                            : "text-white"
-                        }`
+                      ? "text-dark"
+                      : "text-white"
                   } ${
                     open ? `appear text-white opacity-1` : ""
                   } custom-list list`}>
