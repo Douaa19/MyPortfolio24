@@ -27,7 +27,7 @@ function About(props) {
             </p>
             <p>
               Through my experience, I have honed my skills in HTML, CSS,
-              JavaScript, and various framworks like React js and Vue js, along
+              JavaScript, and various frameworks like React js and Vue js, along
               with back-end technologies such as Node js and PHP. Always staying
               up-to-date with the latest trends and best practices.
             </p>
@@ -37,9 +37,9 @@ function About(props) {
               user-friendly.
             </p>
             <p>
-              Feel free to explore my porfolio, and let's connect to discuss how
-              I can help bring your vision to the web. I'm always looking for
-              new opportunities to collaborate and grow.
+              Feel free to explore my portfolio, and let's connect to discuss
+              how I can help bring your vision to the web. I'm always looking
+              for new opportunities to collaborate and grow.
             </p>
           </div>
         </div>
