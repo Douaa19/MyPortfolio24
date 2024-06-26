@@ -615,6 +615,18 @@ video {
   left: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -668,6 +680,22 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .block {
@@ -1805,12 +1833,48 @@ body .menu ul li > a:hover {
     right: 2rem;
   }
 
+  .ssm\:right-10 {
+    right: 2.5rem;
+  }
+
+  .ssm\:right-12 {
+    right: 3rem;
+  }
+
+  .ssm\:right-16 {
+    right: 4rem;
+  }
+
+  .ssm\:top-0 {
+    top: 0px;
+  }
+
+  .ssm\:right-4 {
+    right: 1rem;
+  }
+
+  .ssm\:right-0 {
+    right: 0px;
+  }
+
   .ssm\:mb-4 {
     margin-bottom: 1rem;
   }
 
   .ssm\:ml-\[2rem\] {
     margin-left: 2rem;
+  }
+
+  .ssm\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .ssm\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .ssm\:mr-1 {
+    margin-right: 0.25rem;
   }
 
   .ssm\:flex {
@@ -1947,6 +2011,10 @@ body .menu ul li > a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:right-10 {
+    right: 2.5rem;
+  }
+
   .sm\:w-96 {
     width: 24rem;
   }
@@ -1980,6 +2048,10 @@ body .menu ul li > a:hover {
 
   .md\:ml-0 {
     margin-left: 0px;
+  }
+
+  .md\:mr-0 {
+    margin-right: 0px;
   }
 
   .md\:block {
@@ -2106,6 +2178,10 @@ body .menu ul li > a:hover {
 @media (min-width: 950px) {
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:w-20 {
