@@ -26,7 +26,7 @@ function Home() {
           light={light}
           setLight={setLight}
         />
-        <AnimatedSection id="about">
+        {/* <AnimatedSection id="about">
           <About light={light} />
         </AnimatedSection>
         <AnimatedSection id="projects">
@@ -43,7 +43,7 @@ function Home() {
         </AnimatedSection>
         <AnimatedSection id="footer">
           <Footer light={light} />
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </div>
   );

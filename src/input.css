@@ -7,6 +7,39 @@ html {
   scroll-behavior: smooth;
 }
 
+/* .costum-list {
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.list:hover {
+  color: #dab88a;
+  background: transparent;
+  box-shadow: none;
+}
+.list:before,
+.list:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #dab88a;
+  transition: 400ms ease all;
+}
+.list:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.list:hover:after {
+  width: 100%;
+  transition: 400ms ease all;
+} */
+
 a.link:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -62,7 +95,7 @@ a.link:hover:after {
 
 .background {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 0px;
   right: 0px;
   aspect-ratio: 1 / 1;
@@ -81,7 +114,8 @@ a.link:hover:after {
 }
 
 .menu {
-  z-index: 3;
+  position: relative;
+  z-index: 10;
   top: 0;
   left: 0;
   display: flex;
@@ -147,7 +181,8 @@ body .menu ul li > a:hover {
 #projects,
 #skills,
 #education,
-#contact, #footer {
+#contact,
+#footer {
   width: 100% !important;
 }
 
