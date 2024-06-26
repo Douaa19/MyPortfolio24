@@ -146,15 +146,15 @@ function NavBar(props) {
     //     </div>
     //   </div>
     // </div>
-    <div className="h-max relative bg-white md:flex md:flex-row md:items-center md:justify-around gap-4 md:w-full md:pt-3 ssm:pt-2 font-normal md:gap-1 md:px-6 ssm:flex ssm:flex-col ssm:items-start ssm:px-8 ssm:gap-1 ssm:justify-center">
-      <div className="logo flex justify-center items-center md:ml-0 ssm:ml-[2rem]">
-        <a href="/">
-          <img
-            // src={Logo}
-            alt="logo"
-            className="text-main lg:w-20 text-center p-2 text-18 hover:cursor-pointer md:w-16 ssm:w-12"
-          />
-        </a>
+    <div className="md:flex md:justify-between md:items-center w-full relative ssm:flex ssm:justify-between ssm:items-center">
+      <div className="flex items-end">
+        <span className="text-main uppercase text-32 font-bold">d</span>
+        <span
+          className={`ssm:transition ssm:duration-500 ${
+            props.light ? `text-dark` : `text-white`
+          } uppercase text-24 font-bold`}>
+          olr
+        </span>
       </div>
       <div
         className={`lg:block lg:text-18 lg:w-640 flex justify-center items-center md:block md:text-16 ssm:text-10 md:w-500 ssm:w-full p-0`}>
@@ -166,23 +166,48 @@ function NavBar(props) {
             <li key={link.name} className="ssm:pt-2.5 md:pt-0">
               {link.name !== "search" ? (
                 <a
-                  href={link.link}
+                  href={`#${link.name}`}
                   style={{ animationDelay: `0.${index + 1}s` }}
-                  onClick={link.name === "logout" ? "logout" : () => {}}
-                  className={`costum-list list sm:text-16 ssm:text-14 cursor-pointer ${
-                    open ? `appear text-white opacity-1` : "md:text-dark"
-                  } md:${link.name === "login" ? "hidden" : "block"} md:${
-                    link.name === "logout" ? "hidden" : "block"
-                  }`}>
+                  onClick={() => props.setSection.setSection(link.name)}
+                  className={`${listClass} ${
+                    props.light
+                      ? `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-dark"
+                        }`
+                      : `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-white"
+                        }`
+                  } ${
+                    open ? `appear text-white opacity-1` : ""
+                  } custom-list list`}>
                   {link.name}
                 </a>
               ) : (
-                <div
-                  href=""
+                <a
+                  href={`${link.link}`}
+                  download
                   style={{ animationDelay: `0.${index + 1}s` }}
-                  className={`mt-1 ${
-                    open ? `appear text-white opacity-1` : "md:text-dark"
-                  }`}></div>
+                  className={`${listClass} ${
+                    props.light
+                      ? `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-dark"
+                        }`
+                      : `${
+                          props.section === `${link.name}`
+                            ? "text-main"
+                            : "text-white"
+                        }`
+                  } ${
+                    open ? `appear text-white opacity-1` : ""
+                  } custom-list list`}>
+                  {link.name}
+                </a>
               )}
             </li>
           ))}
