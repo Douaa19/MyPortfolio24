@@ -11,7 +11,7 @@
         "title": "Originart",
         "post": "Full Stack",
         "technologies": ["HTM", "CSS", "PHP"],
-        "description": "This project is for showing the projects of the Originart agency, the web site contain a ontact form created using PHP Mailer.",
+        "description": "This project is a portfolio where can the Originart agency expose their works, the website contain a contact form created using PHP Mailer.",
         "link": "https://originart.ma",
         "img": "img/Originart.png"
     },
@@ -19,7 +19,7 @@
         "title": "UUD",
         "post": "Full Stack",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
-        "description": "The mission was to create the backend using Node js, Express js and MongoDb for the database. In addetion, I helped in the frontend by using Soket.io for a real time chat.",
+        "description": "The mission was to create the backend using Node js, Express js and MongoDb for the database. In addition, I helped in the front end by using React js, Redux, and Soket.io for a real time chat.",
         "link": "https://uud.io",
         "img": "img/UUD.png"
     },
@@ -27,7 +27,7 @@
         "title": "Colleg Assist",
         "post": "Backend Developer",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI"],
-        "description": "My six months experience of internship in SmartPeddle company, my mission was to stractured the database and create the REST API using Node js and Express js.",
+        "description": "Inside SmartPeddle company, my mission was to structure the database and create the REST API using Node j's and Express j's, it's an internship for six months.",
         "link": "https://github.com/Douaa19/CollegeAssistAPI",
         "img": "img/CollegeAssest.png"
     },
@@ -35,7 +35,7 @@
         "title": "Saba Embroidery",
         "post": "Full Stack",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "TailwindCSS"],
-        "description": "This project is a freelance mission. The project is an e-commerce project where the admin can do the CRUD operations easily. Aslo he can find all the orders and the clients.",
+        "description": "This project is a freelance mission. It's an e-commerce project where the admin can do the CRUD operations easily. Also, he can find all the orders and the clients.",
         "link": "https://sabaembroidery.onrender.com",
         "img": "img/SabaEmbroidery.png"
     }
