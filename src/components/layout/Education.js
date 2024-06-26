@@ -20,7 +20,7 @@ function Education(props) {
           <div
             className={`border ${
               props.light ? `border-dark` : `border-white`
-            } p-4 rounded-md min-w-[350px] h-[120px]`}>
+            } p-4 rounded-md w-[350px] h-[120px]`}>
             <h3 className="uppercase pb-2 md:text-16 ssm:text-12 font-bold">
               youcode - youssoufia
             </h3>

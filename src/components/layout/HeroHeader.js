@@ -4,8 +4,8 @@ import { Img } from "react-image";
 
 function HeroHeader(props) {
   return (
-    <div className="relative flex justify-center items-center md:gap-40 ssm:gap-20 h-[80vh]">
-      <div className="w-48 animate">
+    <div className="relative flex sm:flex-row ssm:flex-col justify-center items-center md:gap-40 ssm:gap-20 h-[80vh]">
+      <div className="sm:w-48 ssm:w-36 animate">
         <Img
           src={ProfileImg}
           alt="profile_img"

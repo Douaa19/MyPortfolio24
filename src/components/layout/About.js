@@ -16,7 +16,7 @@ function About(props) {
           <div
             className={`${
               props.light ? `text-dark` : `text-white`
-            } w-2/3 px-4 flex flex-col gap-3 text-justify`}>
+            } md:w-2/3 ssm:w-full px-4 md:text-16 ssm:text-12 flex flex-col gap-3 text-justify`}>
             <p>
               Welcome to my portfolio! As a web developer with a passion for
               crafting dynamic and user-friendly websites. With strong

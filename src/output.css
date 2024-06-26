@@ -1780,8 +1780,28 @@ body .menu ul li > a:hover {
     width: 100%;
   }
 
+  .ssm\:w-32 {
+    width: 8rem;
+  }
+
+  .ssm\:w-3 {
+    width: 0.75rem;
+  }
+
+  .ssm\:w-36 {
+    width: 9rem;
+  }
+
+  .ssm\:w-48 {
+    width: 12rem;
+  }
+
   .ssm\:flex-col {
     flex-direction: column;
+  }
+
+  .ssm\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .ssm\:items-end {
@@ -1841,6 +1861,10 @@ body .menu ul li > a:hover {
     font-size: 24px;
   }
 
+  .ssm\:text-16 {
+    font-size: 16px;
+  }
+
   .ssm\:opacity-100 {
     opacity: 1;
   }
@@ -1881,8 +1905,24 @@ body .menu ul li > a:hover {
     width: 24rem;
   }
 
+  .sm\:w-48 {
+    width: 12rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:text-12 {
     font-size: 12px;
+  }
+
+  .sm\:text-18 {
+    font-size: 18px;
+  }
+
+  .sm\:text-24 {
+    font-size: 24px;
   }
 }
 
@@ -1918,6 +1958,10 @@ body .menu ul li > a:hover {
 
   .md\:h-\[430px\] {
     height: 430px;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:w-500 {
