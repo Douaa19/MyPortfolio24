@@ -14,25 +14,22 @@ function Contact(props) {
     setData(newData);
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     let errors = validateForm(data);
 
     if (Object.keys(errors).length === 0) {
-      emailjs
-        .sendForm(
-          "service_6dv538h",
-          "template_l3ipqke",
-          form.current,
-          "yzkH_aKSYHAs1kmVS"
-        )
-        .then(
-          (result) => {
-            alert("Thank you!");
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
+      const result = await emailjs.sendForm(
+        "service_6dv538h",
+        "template_l3ipqke",
+        form.current,
+        "yzkH_aKSYHAs1kmVS"
+      );
+      if (result) {
+        alert("Message sent successfully");
+      } else {
+        alert("Message failed to send");
+      }
     } else {
       console.log(errors);
     }
@@ -87,7 +84,8 @@ function Contact(props) {
         <div className="flex flex-wrap justify-center items-center md:gap-6 ssm:gap-2 w-full">
           <form
             class="mt-4 mb-2 w-80 max-w-screen-lg sm:w-96 h-full"
-            ref={form}>
+            ref={form}
+            onSubmit={handleSubmit}>
             <div class="mb-24 flex flex-col gap-6">
               <div class="relative h-11 w-full min-w-[200px]">
                 <input
@@ -190,7 +188,6 @@ function Contact(props) {
                   : `text-white border-white hover:shadow-white`
               } shadow-sm transition-all hover:shadow-md focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
               type="submit"
-              onClick={() => handleSubmit()}
               data-ripple-light="true">
               Contact
             </button>

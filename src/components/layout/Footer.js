@@ -10,7 +10,7 @@ import MyResume from "file:///C:/Users/Youcode/Documents/CV/En%20Douaa%20Larif%2
 function Footer(props) {
   return (
     <div
-      className={`p-8 flex justify-center items-center border ${
+      className={`p-8 flex justify-center items-center border-1 ${
         props.light ? `text-dark border-t-dark` : `text-white border-t-white`
       }`}
       id="footer">
