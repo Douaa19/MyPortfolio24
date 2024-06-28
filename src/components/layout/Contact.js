@@ -27,6 +27,7 @@ function Contact(props) {
       );
       if (result) {
         alert("Message sent successfully");
+        setData({});
       } else {
         alert("Message failed to send");
       }
