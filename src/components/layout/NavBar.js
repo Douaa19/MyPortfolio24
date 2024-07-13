@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as Dark } from "../../assets/moon-svgrepo-com.svg";
 import { ReactComponent as Light } from "../../assets/sun-svgrepo-com.svg";
-import MyResume from "file:///C:/Users/Youcode/Documents/CV/En%20Douaa%20Larif%20Resume.pdf";
+import MyResume from "file:///C:/Users/Youcode/Documents/CV/Douaa%20Larif%20Resume.pdf";
 
 function NavBar(props) {
   let links = [
@@ -66,9 +66,7 @@ function NavBar(props) {
                   download
                   style={{ animationDelay: `0.${index + 1}s` }}
                   className={`${listClass} ${
-                    props.light
-                      ? "text-dark"
-                      : "text-white"
+                    props.light ? "text-dark" : "text-white"
                   } ${
                     open ? `appear text-white opacity-1` : ""
                   } custom-list list`}>
