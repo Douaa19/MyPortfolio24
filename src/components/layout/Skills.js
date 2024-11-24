@@ -27,7 +27,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-html5 text-32 ${
@@ -45,7 +45,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-css3 text-32 ${
@@ -63,7 +63,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-sass text-32 ${
@@ -81,7 +81,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 {props.light ? <TailwindCSSDark /> : <TailwindCSSWhite />}
                 <span
@@ -96,7 +96,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-js text-32 ${
@@ -114,7 +114,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-php text-32 ${
@@ -132,7 +132,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-node text-32 ${
@@ -150,7 +150,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 {props.light ? <ExpressDark /> : <ExpressWhite />}
                 <span
@@ -165,7 +165,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-react text-32 ${
@@ -183,7 +183,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
                   className={`fab fa-vuejs text-32 ${
@@ -201,7 +201,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 {props.light ? <MySQLWhite /> : <MySQLDark />}
                 <span
@@ -216,7 +216,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 {props.light ? <MongoDBDark /> : <MongoDBWhite />}
                 <span
@@ -231,7 +231,7 @@ function Skills(props) {
               className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
               <div
                 className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
-                  props.light ? `bg-white` : `bg-dark`
+                  props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 {props.light ? <PostmanWhite /> : <PostmanDark />}
                 <span
