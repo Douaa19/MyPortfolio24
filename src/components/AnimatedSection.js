@@ -10,15 +10,15 @@ function AnimatedSection({ children, id }) {
       if (section && !hasAnimated) {
         const rect = section.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
-        const offset = rect.top + rect.height - viewportHeight;
 
-        if (window.scrollY > offset) {
+        if (rect.top < viewportHeight && rect.bottom > 0) {
           setIsVisible(true);
           setHasAnimated(true);
         }
       }
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [id, hasAnimated]);

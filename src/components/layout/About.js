@@ -27,7 +27,7 @@ function About(props) {
             </p>
             <p>
               Through my experience, I have honed my skills in HTML, CSS,
-              JavaScript, and various frameworks like React js and Vue js, along
+              JavaScript, and various frameworks like React js and Next js, along
               with back-end technologies such as Node js and PHP. Always staying
               up-to-date with the latest trends and best practices.
             </p>
