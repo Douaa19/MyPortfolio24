@@ -25,7 +25,7 @@ function ProjectCard({
       <img
         src={img}
         alt="project-img"
-        class="w-full relative h-48 rounded-t-md object-cover"
+        class="w-full relative h-52 rounded-t-md object-cover"
       />
       <div class="p-4 flex flex-col gap-2">
         <div className="flex flex-row justify-between items-end">

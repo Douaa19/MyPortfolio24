@@ -752,6 +752,10 @@ video {
   height: 100vh;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .min-h-\[80px\] {
   min-height: 80px;
 }
@@ -1037,8 +1041,16 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain {
+  object-fit: contain;
+}
+
 .object-cover {
   object-fit: cover;
+}
+
+.object-fill {
+  object-fit: fill;
 }
 
 .p-0 {
