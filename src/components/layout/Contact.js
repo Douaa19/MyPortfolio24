@@ -191,16 +191,18 @@ function Contact(props) {
                 </label>
               </div>
             </div>
-            <button
-              className={`mt-6 block w-full select-none rounded-lg py-3 px-6 border text-center align-middle font-sans text-xs font-bold uppercase ${
-                props.light
-                  ? `text-dark border-dark hover:shadow-dark`
-                  : `text-white border-white hover:shadow-white`
-              } shadow-sm transition-all hover:shadow-md focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
-              type="submit"
-              data-ripple-light="true">
-              Contact
-            </button>
+            <div className="flex justify-center items-center w-full">
+              <button
+                className={`mt-6 block w-1/2 select-none rounded-lg py-4 px-6 border text-center align-middle font-sans text-14 font-bold tracking-wider uppercase ${
+                  props.light
+                    ? `text-dark border-dark`
+                    : `text-white border-white`
+                } shadow-md transition-all duration-300 hover:scale-105`}
+                type="submit"
+                data-ripple-light="true">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

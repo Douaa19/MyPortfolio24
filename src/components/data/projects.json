@@ -36,7 +36,15 @@
         "post": "Full Stack",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "TailwindCSS"],
         "description": "This project is a freelance mission. It's an e-commerce project where the admin can do the CRUD operations easily. Also, he can find all the orders and the clients.",
-        "link": "https://sabaembroidery.onrender.com",
+        "link": "https://www.sabaembroidery.com",
         "img": "img/SabaEmbroidery.png"
+    },
+    {
+        "title": "Agence V4",
+        "post": "Frontend Developer",
+        "technologies": ["Next js", "TypeScript", "RestAPI", "TailwindCSS", "WordPress"],
+        "description": "I collaborated with a coworker to develop an admin dashboard using TypeScript and Next.js. I also created an action plan for a WordPress page that includes a form and implemented the page using the Gravity Forms plugin. Additionally, I customized the form's CSS styling to align with the desired design.",
+        "link": "/",
+        "img": "img/AgenceV4.png"
     }
 ]

@@ -5,7 +5,7 @@ import { ReactComponent as ResumeWhite } from "../../assets/resume-4-white-svgre
 import { ReactComponent as ResumeDark } from "../../assets/resume-4-dark-svgrepo-com.svg";
 import { ReactComponent as GitHubDark } from "../../assets/github-142-black-svgrepo-com.svg";
 import { ReactComponent as GitHubWhite } from "../../assets/github-142-white-svgrepo-com.svg";
-import MyResume from "file:///C:/Users/Youcode/Documents/CV/En%20Douaa%20Larif%20Resume.pdf";
+import MyResume from "file:///C:/Users/Youcode/Documents/CV/Leatest%20CV%20-%20Presentation%20-%20Motivation%20Letter/Douaa%20larif%20-%20Resume%20Court.pdf";
 
 function Footer(props) {
   return (
