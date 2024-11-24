@@ -4,9 +4,9 @@ function About(props) {
   return (
     <div className={`pb-8 flex justify-center items-center w-full`} id="about">
       <div className="flex flex-col justify-center items-start w-10/12">
-        <div className="md:mb-4 ssm:mb-4">
+        <div className="mb-6">
           <h2
-            className={`uppercase md:text-28 ssm:text-24 font-bold ${
+            className={`uppercase md:text-28 ssm:text-24 font-bold tracking-wide ${
               props.light ? `text-dark` : `text-white`
             }`}>
             about

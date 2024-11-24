@@ -8,9 +8,9 @@ function Education(props) {
       }`}
       id="education">
       <div className="w-10/12">
-        <div className="md:mb-4 ssm:mb-4 w-full">
+        <div className="mb-6 w-full">
           <h2
-            className={`uppercase md:text-28 ssm:text-24 font-bold w-full ${
+            className={`uppercase md:text-28 ssm:text-24 font-bold w-full tracking-wide ${
               props.light ? `text-dark` : `text-white`
             }`}>
             Education

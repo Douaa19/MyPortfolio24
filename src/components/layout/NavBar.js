@@ -24,7 +24,7 @@ function NavBar(props) {
     "cursor-pointer uppercase px-2 py-0 ssm:py-2 md:mx-2 relative lg:text-16 hover:text-main sm:text-12 flex items-center ssm:transition ssm:duration-500 ssm:ease-in-out ssm:hover:-translate-x-4 md:hover:-translate-y-1 md:hover:-translate-x-0 ssm:hover:-translate-y-0";
 
   return (
-    <div className="md:flex md:justify-between md:items-center w-full relative ssm:flex ssm:justify-between ssm:items-center">
+    <div className="md:flex md:justify-between md:items-center w-full relative ssm:flex ssm:justify-between ssm:items-center py-3">
       <div className="flex items-end">
         <span className="text-main uppercase text-32 font-bold">d</span>
         <span
