@@ -19,7 +19,7 @@ function Home() {
   return (
     <div
       className={`w-full ssm:transition ssm:duration-500 ${
-        light ? "bg-white" : "bg-dark"
+        light ? "bg-gray-50" : "bg-dark"
       }`}>
       <div className="flex flex-col items-center">
         <Header
