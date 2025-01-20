@@ -135,6 +135,24 @@ function Skills(props) {
                   props.light ? `bg-gray-50` : `bg-dark`
                 }`}>
                 <i
+                  className={`fab fa-laravel text-32 ${
+                    props.light ? `text-dark` : `text-white`
+                  }`}></i>
+                <span
+                  className={`${
+                    props.light ? `text-dark` : `text-white`
+                  } md:text-16 ssm:text-12`}>
+                  Laravel
+                </span>
+              </div>
+            </li>
+            <li
+              className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
+              <div
+                className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
+                  props.light ? `bg-gray-50` : `bg-dark`
+                }`}>
+                <i
                   className={`fab fa-node text-32 ${
                     props.light ? `text-dark` : `text-white`
                   }`}></i>
@@ -239,6 +257,24 @@ function Skills(props) {
                     props.light ? `text-dark` : `text-white`
                   } md:text-16 ssm:text-12`}>
                   Postman
+                </span>
+              </div>
+            </li>
+            <li
+              className={`tech-icon mr-4 mb-4 flex flex-col items-center justify-center text-center gap-1 p-1 rounded-md`}>
+              <div
+                className={`inner rounded-md flex flex-col items-center justify-center w-full p-4 ${
+                  props.light ? `bg-gray-50` : `bg-dark`
+                }`}>
+                <i
+                  className={`fab fa-wordpress text-32 ${
+                    props.light ? `text-dark` : `text-white`
+                  }`}></i>
+                <span
+                  className={`${
+                    props.light ? `text-dark` : `text-white`
+                  } md:text-16 ssm:text-12`}>
+                  Wordpress
                 </span>
               </div>
             </li>

@@ -1,6 +1,6 @@
 import React from "react";
 import CardGrid from "../templates/CardGrid";
-import projects from "../data/projects.json";
+import projects from "../../assets/data/projects.json";
 
 function Projects(props) {
   const myProjects = projects;
