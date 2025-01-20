@@ -1,7 +1,7 @@
 [
     {
         "title": "STOREEZ",
-        "post": "Full Stack",
+        "post": "Full Stack Developer",
         "technologies": ["PHP", "LARAVEL", "HTML", "CSS"],
         "description": "Our mission in this project was to modify the frontend and the backend of an existing E-commerce project. The mission toke two months. We collaborate three members to complete this project.",
         "link": "https://github.com/Douaa19/STOREEZ",
@@ -9,7 +9,7 @@
     },
     {
         "title": "Originart",
-        "post": "Full Stack",
+        "post": "Full Stack Developer",
         "technologies": ["HTM", "CSS", "PHP"],
         "description": "This project is a portfolio where can the Originart agency expose their works, the website contain a contact form created using PHP Mailer.",
         "link": "https://originart.ma",
@@ -17,7 +17,7 @@
     },
     {
         "title": "UUD",
-        "post": "Full Stack",
+        "post": "Full Stack Developer",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "Soket.io", "Sass"],
         "description": "The mission was to create the backend using Node js, Express js and MongoDb for the database. In addition, I helped in the front end by using React js, Redux, and Soket.io for a real time chat.",
         "link": "https://uud.io",
@@ -33,7 +33,7 @@
     },
     {
         "title": "Saba Embroidery",
-        "post": "Full Stack",
+        "post": "Full Stack Developer",
         "technologies": ["Node js", "Express js", "MongoDb", "RestAPI", "React js", "React Hooks", "Redux", "TailwindCSS"],
         "description": "This project is a freelance mission. It's an e-commerce project where the admin can do the CRUD operations easily. Also, he can find all the orders and the clients.",
         "link": "https://www.sabaembroidery.com",
@@ -46,5 +46,21 @@
         "description": "I collaborated with a coworker to develop an admin dashboard using TypeScript and Next.js. I also created an action plan for a WordPress page that includes a form and implemented the page using the Gravity Forms plugin. Additionally, I customized the form's CSS styling to align with the desired design.",
         "link": "/",
         "img": "img/AgenceV4.png"
+    },
+    {
+        "title": "Logiauto",
+        "post": "Full Stack Developer",
+        "technologies": ["JavaScript", "CSS", "WordPress"],
+        "description": "I collaborated with a designer and a project manager to develop a website using WordPress, Elementor, CSS, and JavaScript. We ensured the project respected the deadline and prioritized user experience to deliver an effective and high-quality solution.",
+        "link": "carplug.ma",
+        "img": "img/Carplug.png"
+    },
+    {
+        "title": "E-Training",
+        "post": "Full Stack Developer",
+        "technologies": ["JavaScript", "TailwindCSS", "Bootstrap", "Laravel", "PHP"],
+        "description": "I collaborated with a developer to modify an existing Laravel solution and develop an e-training website, utilizing Laravel with MySQL for the database and Bootstrap/TailwindCSS for the front end. This web application tracks client statuses and provides super admins and managers with tools to efficiently oversee and manage client processes.",
+        "link": "carplug.ma",
+        "img": "img/E-Training.png"
     }
 ]

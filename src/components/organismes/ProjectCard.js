@@ -12,7 +12,7 @@ function ProjectCard({
 }) {
   return (
     <div
-      class={`rounded-md border opacity-img hover:cursor-pointer transition-all md:h-[430px] ssm:h-[400px] ${
+      class={`rounded-md border opacity-img hover:cursor-pointer transition-all h-[520px] ${
         light ? `text-dark` : `text-white`
       } hover:shadow-md hover:-translate-y-1 transition duration-500 ease-in-out mx-4 my-2`}
       onClick={() => {
@@ -25,15 +25,13 @@ function ProjectCard({
       <img
         src={img}
         alt="project-img"
-        class="w-full relative h-52 rounded-t-md object-cover"
+        class="w-full relative h-52 rounded-t-md object-contain"
       />
       <div class="p-4 flex flex-col gap-2">
-        <div className="flex flex-row justify-between items-end">
-          <h2 className="uppercase md:text-18 ssm:text-14 font-bold">
-            {title}
-          </h2>
-          <h3 className="uppercase md:text-16 ssm:text-12">{post}</h3>
-        </div>
+        <h2 className="uppercase md:text-24 ssm:text-14 font-bold my-2">
+          {title}
+        </h2>
+        <h3 className="uppercase md:text-16 ssm:text-12">{post}</h3>
         <div className="flex flex-wrap flex-row">
           {technologies.map((techno, index) => (
             <span
